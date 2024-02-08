@@ -1,0 +1,1 @@
+{"version":3,"file":"1-gallery-66a4993c.js","sources":["../../src/js/1-gallery.js"],"sourcesContent":["import SimpleLightbox from 'simplelightbox';\nimport 'simplelightbox/dist/simple-lightbox.min.css';\n\nconst lightbox = new SimpleLightbox('.gallery a', {\n  /* options */\n});\n"],"names":["SimpleLightbox"],"mappings":"yCAGiB,IAAIA,EAAe,aAAc,CAElD,CAAC"}
