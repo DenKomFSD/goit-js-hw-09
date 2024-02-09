@@ -1,0 +1,82 @@
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  max-width: 360px;
+  gap: 8px;
+  color: #2e2f42;
+
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.64px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+input {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  padding: 8px;
+  transition: all ease-in-out;
+}
+
+input:hover {
+  border: 1px solid #000;
+  outline: transparent;
+  outline-offset: 4px;
+}
+input:active,
+:focus {
+  border: 1px solid #808080;
+  outline: transparent;
+  outline-offset: 4px;
+}
+textarea {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  padding: 8px;
+  transition: all ease-in-out;
+}
+textarea:hover {
+  border: 1px solid #000;
+  outline: transparent;
+  outline-offset: 4px;
+}
+
+textarea:active,
+:focus {
+  border: 1px solid #808080;
+  outline: transparent;
+  outline-offset: 4px;
+}
+
+button {
+  display: inline-flex;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  max-width: 95px;
+  border: transparent;
+  border-radius: 8px;
+  background: #4e75ff;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.64px;
+  transition: all ease-in-out;
+}
+
+button:hover {
+  background: #6c8cff;
+}
