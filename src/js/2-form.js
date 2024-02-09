@@ -1,5 +1,4 @@
 const form = document.querySelector('.feedback-form');
-const button = document.querySelector('button');
 
 function savedState(form) {
   const userMail = form.email.value.trim();
@@ -12,8 +11,14 @@ function savedState(form) {
 
 form.addEventListener('submit', e => {
   e.preventDefault();
-  localStorage.clear();
-  form.reset();
+  const data = savedState(form);
+  if (data.userMail && data.message) {
+    console.log(data);
+    localStorage.clear();
+    form.reset();
+  } else {
+    console.log('Поля форми не заповнені.');
+  }
 });
 
 form.addEventListener('input', e => {
@@ -22,14 +27,6 @@ form.addEventListener('input', e => {
   const jsonData = JSON.stringify(data);
   localStorage.setItem('feedback-form-state', jsonData);
 });
-
-// const savedData = localStorage.getItem('feedback-form-state');
-// if (savedData) {
-//   const { userMail, message } = JSON.parse(savedData);
-
-//   form.email.value = userMail;
-//   form.message.value = message;
-// }
 
 function loadState() {
   const savedData = localStorage.getItem('feedback-form-state');
